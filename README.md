@@ -39,9 +39,10 @@ docker run --rm -it -p 8000:8000 python-helloworld:latest
 curl http://localhost:8000
 ````
 
-## Pushing Image to Docker Hub, tag it with your DOCKER_ID_USER
+## Pushing Image to Docker Hub
 ```
 docker login
+#DOCKER_ID_USER is your Docker Hub userid, tag your image with your Docker Hub userid
 docker tag python-helloworld DOCKER_ID_USER/python-helloworld
 docker push DOCKER_ID_USER/python-helloworld
 ```
