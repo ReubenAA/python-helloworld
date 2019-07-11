@@ -53,6 +53,7 @@ kubectl create deployment hello-node --image=gcr.io/hello-minikube-zero-install/
 kubectl create deployment python-helloworld --image=ozhank/python-helloworld
 kubectl expose deployment python-helloworld --type=LoadBalancer --port=8000
 kubectl get services
+minikube ip
 minikube service python-helloworld --url
 curl <url>
 ```
