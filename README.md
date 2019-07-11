@@ -1,4 +1,4 @@
-# Simple Python Flask Http Docker Container for testing purposes
+# Hello World Python Flask Container for Docker & Kubernetes Testing
 
 More Python Flask information please visit: http://flask.pocoo.org
 
