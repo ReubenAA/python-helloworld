@@ -47,13 +47,14 @@ docker push DOCKER_ID_USER/python-helloworld
 ```
 
 ## Building Container under Kubernetes
-1) Deploy Container to K8s
+1) Deploy Container to K8s and test
 ```
 kubectl create deployment python-helloworld --image=ozhank/python-helloworld
 kubectl expose deployment python-helloworld --type=LoadBalancer --port=8000
 kubectl get services
+curl http://<CLUSTER-IP>:PORT
 ```
-2) Test Service over Minikube
+2) If your deploy K8s over Minikube you could test it over minikube ip
 ```
 minikube ip
 minikube service python-helloworld --url
