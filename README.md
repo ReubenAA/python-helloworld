@@ -1,4 +1,6 @@
-# Hello World Python Flask Container for Docker & Kubernetes Testing
+# Hello World Container for Docker & Kubernetes Testing
+
+This is a simple Hello World Python Flask Container for Docker & Kubernetes testing porpouses
 
 More Python Flask information please visit: http://flask.pocoo.org
 
