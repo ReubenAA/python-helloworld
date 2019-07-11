@@ -4,7 +4,8 @@ More Python Flask information please visit: http://flask.pocoo.org
 
 - - -
 
-Building Container Under Docker:
+> Building Container Under Docker:
+
 1) Clone Git Repo
 ```
 git clone https://github.com/zebrastack/python-helloworld.git
@@ -36,11 +37,12 @@ docker run --rm -it -p 8000:8000 python-helloworld:latest
 curl http://localhost:8000
 ````
 
-6) Push Image to Docker Hub, tag it with your DOCKER_ID_USER
+> Push Image to Docker Hub, tag it with your DOCKER_ID_USER
 ```
 docker login
 docker tag python-helloworld DOCKER_ID_USER/python-helloworld
 docker push DOCKER_ID_USER/python-helloworld
 ```
 
-7) 
+> Building Container under Kubernetes
+1)
