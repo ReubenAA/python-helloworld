@@ -1,10 +1,10 @@
-Simple Python Flask Http Docker Container for testing purposes
+# Simple Python Flask Http Docker Container for testing purposes
 
 More Python Flask information please visit: http://flask.pocoo.org
 
 - - -
 
-> Building Container Under Docker:
+## Building Container Under Docker:
 
 1) Clone Git Repo
 ```
@@ -37,12 +37,12 @@ docker run --rm -it -p 8000:8000 python-helloworld:latest
 curl http://localhost:8000
 ````
 
-> Push Image to Docker Hub, tag it with your DOCKER_ID_USER
+## Pushing Image to Docker Hub, tag it with your DOCKER_ID_USER
 ```
 docker login
 docker tag python-helloworld DOCKER_ID_USER/python-helloworld
 docker push DOCKER_ID_USER/python-helloworld
 ```
 
-> Building Container under Kubernetes
+## Building Container under Kubernetes
 1)
