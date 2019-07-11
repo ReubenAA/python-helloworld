@@ -47,14 +47,17 @@ docker push DOCKER_ID_USER/python-helloworld
 ```
 
 ## Building Container under Kubernetes
+1) Deploy Container to K8s
 ```
-kubectl run python-helloworld --image=ozhank/python-helloworld --port 8000 --expose
-kubectl create deployment hello-node --image=gcr.io/hello-minikube-zero-install/hello-node
 kubectl create deployment python-helloworld --image=ozhank/python-helloworld
 kubectl expose deployment python-helloworld --type=LoadBalancer --port=8000
 kubectl get services
+```
+2) Test Service over Minikube
+```
 minikube ip
 minikube service python-helloworld --url
 curl <url>
+#Example: curl http://192.168.39.165:31282
 ```
 
