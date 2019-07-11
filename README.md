@@ -47,7 +47,6 @@ docker push DOCKER_ID_USER/python-helloworld
 ```
 
 ## Building Container under Kubernetes
-1)
 ```
 kubectl run python-helloworld --image=ozhank/python-helloworld --port 8000 --expose
 kubectl create deployment hello-node --image=gcr.io/hello-minikube-zero-install/hello-node
